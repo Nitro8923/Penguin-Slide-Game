@@ -1,5 +1,7 @@
-from sense_hat import SenseHat
+from sense_emu import SenseHat
 from time import sleep
+import pygame
+
 sense = SenseHat()
 
 # Variables
@@ -11,7 +13,7 @@ time = 0
 
 # Colours
 orange = (252, 156, 13)
-black = (0, 0, 0)
+black = (90, 90, 90)
 white = (235, 232, 237)
 
 def draw_penguin():
@@ -31,6 +33,6 @@ def update_time():
     time += 1
 
 def main():
-
+  draw_penguin()
       
 main()
