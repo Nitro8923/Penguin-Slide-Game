@@ -57,7 +57,7 @@ def penguin_jump():
     penguin_position = [1, 4]
     draw_penguin()
     
-    sleep(1.6)
+    sleep(2)
     clear_penguin_normal()
     penguin_position = [1, 5]
     draw_penguin()
@@ -80,7 +80,7 @@ def penguin_slide():
     sense.set_pixel(penguin_position[0], penguin_position[1], orange)
     sense.set_pixel(penguin_position[0] + 1, penguin_position[1], white)
     sense.set_pixel(penguin_position[0] + 2, penguin_position[1] - 1, black)
-    sleep(1.2)
+    sleep(2)
     clear_penguin_slide()
 
     draw_penguin()
@@ -150,6 +150,8 @@ def game():
                 
                 if event.direction == "right" and (speed_max - speed) >= 0.1:
                     speed += 0.1
+    
+    print("You Died!")
 
 
 def main():
