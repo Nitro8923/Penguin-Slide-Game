@@ -234,7 +234,7 @@ def you_lost():
     if time > int(high_score):
         with open("record.txt", "w") as file:
             file.write(str(time))
-    sense.show_message("You survived " + time + " seconds")
+    sense.show_message("You survived " + str(time) + " seconds")
 
 
 
