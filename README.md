@@ -1,5 +1,6 @@
 # Penguin-Slide-Game
 
+## NOTE: THIS PROGRAM WILL NOT WORK ON TRINKET
 
 Change 
 from sense_emu import SenseHat
